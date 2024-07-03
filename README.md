@@ -5,6 +5,7 @@ This repository is a step-by-step approach to finetune `Falcon 7B` model on a Wi
 **Project Architecture**
 ```
 FALCON-7B-FINETUNING/
+    ├── __pycache__/
     ├── data/
     │   ├── ...
     │   ├── ...
@@ -12,19 +13,23 @@ FALCON-7B-FINETUNING/
     │   └── train-v2.0.json
     ├── env/
     ├── output_dir/
-    │   └── xxx
+    │   └── checkpoint - X
+    ├── src/
+    │   ├── data/
+    │   │   ├── data_preperation.py
+    │   │   └── load_data.py
+    │   ├── models/
+    │   │   └── training.py
+    │   └── utils/
+    │       └── model_utils.py
     ├── trained_models/
-    │   └── new_model/ ...
+    │   └── new_model/
     ├── .gitignore
     ├── cuda.py
-    ├── data_preparation.py
     ├── question_answer.py
-    ├── load_data.py
     ├── main.py
-    ├── model_utils.py
     ├── README.md
-    ├── requirements.txt
-    └── training.py
+    └── requirements.txt
 ```
 ---
 ## Usage
