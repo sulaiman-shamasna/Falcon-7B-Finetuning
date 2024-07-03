@@ -44,6 +44,10 @@ To work with this project, follow these steps:
 2. **Set up Python environment:**
     - In this project, I used **Python 3.10**.
     - Create and activate a virtual environment:
+        ```bash
+        python -m venv env
+        ```
+    - And activate it, 
       - For Windows (using Git Bash):
         ```bash
         source env/Scripts/activate
