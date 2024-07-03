@@ -1,10 +1,16 @@
 import sys
 import pandas as pd
 from datasets import Dataset
-from data_preparation import tokenize_dataset
-from model_utils import load_model_and_tokenizer, prepare_model_for_training, save_model, print_trainable_parameters
-from training import fine_tune_model
-from load_data import df_squad
+from src.data.data_preparation import tokenize_dataset
+
+from src.utils.model_utils import (load_model_and_tokenizer,
+                                    prepare_model_for_training,
+                                    save_model,
+                                    print_trainable_parameters)
+
+from src.models.training import fine_tune_model
+from src.data.load_data import df_squad
+
 import numpy as np
 import torch
 from datetime import datetime
